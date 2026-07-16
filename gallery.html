@@ -67,7 +67,16 @@ border-radius:40px;
 font-size:18px;
 cursor:pointer;
 }
-
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
 </style>
 
 </head>
@@ -98,9 +107,51 @@ Aku sayang kamu.
 
 </p>
 
-<button>
-Continue →
+<button onclick="showLetter()">
+Open My Heart ❤️
 </button>
+
+<div id="letter" style="display:none;max-width:700px;margin-top:40px;animation:fade 2s;">
+
+<h2 style="margin-bottom:20px;">
+💌 A Letter For You
+</h2>
+
+<p>
+
+Happy Birthday, Dzaky.
+
+Terima kasih karena sudah hadir di hidupku.
+
+Mungkin website ini sederhana.
+
+Tapi setiap bagian yang kamu lihat dibuat dengan penuh sayang.
+
+Semoga semua mimpi kamu tercapai.
+
+Semoga kamu selalu sehat.
+
+Dan semoga aku masih bisa menemani ulang tahunmu di tahun-tahun berikutnya.
+
+I love you.
+
+❤️
+
+— Ayse
+
+</p>
+
+</div>
+
+<script>
+
+function showLetter(){
+
+document.getElementById("letter").style.display="block";
+
+}
+
+</script>
 
 </div>
 
